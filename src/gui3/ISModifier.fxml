@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #B3CCF1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui3.ISModifierController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="-3.0" prefHeight="728.0" prefWidth="954.0" style="-fx-background-color: #08415d;">
+         <children>
+            <AnchorPane layoutX="-3.0" layoutY="-3.0" prefHeight="777.0" prefWidth="250.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Button fx:id="gotouser" layoutX="10.0" layoutY="165.0" mnemonicParsing="false" onMouseClicked="#gotouser" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="User/Admin">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="gotoreclamation" layoutX="10.0" layoutY="249.0" mnemonicParsing="false" onMouseClicked="#gotoreclamation" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="Réclamation/Activité">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="gotocommande" layoutX="10.0" layoutY="333.0" mnemonicParsing="false" onMouseClicked="#gotocommande" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="Boutique">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="gotoabonnement" layoutX="10.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#gotoabonnement" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="Abonnement /zone d’accès ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="gotoemploi" layoutX="10.0" layoutY="589.0" mnemonicParsing="false" onMouseClicked="#gotoemploi" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="Emploi du temps">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button fx:id="gotomateriel" layoutX="10.0" layoutY="502.0" mnemonicParsing="false" onMouseClicked="#gotomateriel" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="Gestion Materiel">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="420.0" layoutY="114.0" text="Modifier une séance" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="408.0" layoutY="273.0" text="Capacité" textFill="#0d0d0d">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="407.0" layoutY="331.0" text="ID Coach" textFill="#0d0d0d">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="390.0" layoutY="450.0" text="Type Activité" textFill="#0d0d0d">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="417.0" layoutY="393.0" text="Date" textFill="#0d0d0d">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfCo" layoutX="495.0" layoutY="325.0" prefHeight="32.0" prefWidth="149.0" promptText="insérer le ID coach" />
+            <Button fx:id="butSM" layoutX="537.0" layoutY="615.0" mnemonicParsing="false" onAction="#ModifS" prefHeight="32.0" prefWidth="77.0" text="Modifier">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="tfS" layoutX="497.0" layoutY="207.0" prefHeight="32.0" prefWidth="150.0" />
+            <Label layoutX="404.0" layoutY="213.0" text="ID Seance" textFill="#0d0d0d">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="tfC" layoutX="495.0" layoutY="264.0" prefHeight="32.0" prefWidth="150.0" />
+            <DatePicker fx:id="tfda" layoutX="495.0" layoutY="387.0" prefHeight="32.0" prefWidth="149.0" />
+            <ComboBox fx:id="tfT" layoutX="495.0" layoutY="451.0" prefHeight="32.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="retourp" layoutX="311.0" layoutY="67.0" mnemonicParsing="false" onAction="#retourp" text="Retour" />
+   </children>
+</AnchorPane>

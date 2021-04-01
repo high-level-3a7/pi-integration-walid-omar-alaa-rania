@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="746.0" prefWidth="1218.0" style="-fx-background-color: #B3CCF1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui3.ISAfficherController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="1.0" prefHeight="746.0" prefWidth="1239.0" style="-fx-background-color: #08415d;">
+         <children>
+            <AnchorPane layoutX="-2.0" layoutY="-6.0" prefHeight="752.0" prefWidth="254.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Button fx:id="gotouser" layoutX="10.0" layoutY="165.0" mnemonicParsing="false" onMouseClicked="#gotouser" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="User/Admin">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="gotoreclamation" layoutX="10.0" layoutY="249.0" mnemonicParsing="false" onMouseClicked="#gotoreclamation" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="Réclamation/Activité">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="gotocommande" layoutX="10.0" layoutY="333.0" mnemonicParsing="false" onMouseClicked="#gotocommande" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="Boutique">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="gotoabonnement" layoutX="10.0" layoutY="417.0" mnemonicParsing="false" onMouseClicked="#gotoabonnement" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="Abonnement /zone d’accès ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="gotoemploi" layoutX="10.0" layoutY="589.0" mnemonicParsing="false" onMouseClicked="#gotoemploi" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="Emploi du temps">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Button fx:id="gotomateriel" layoutX="10.0" layoutY="502.0" mnemonicParsing="false" onMouseClicked="#gotomateriel" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="Gestion Materiel">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnm" layoutX="695.0" layoutY="677.0" mnemonicParsing="false" onAction="#modifB" prefHeight="40.0" prefWidth="102.0" text="Modifier">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSE" layoutX="1059.0" layoutY="130.0" mnemonicParsing="false" onAction="#SuppE" prefHeight="31.0" prefWidth="104.0" text="Supprimer">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSE1" layoutX="538.0" layoutY="677.0" mnemonicParsing="false" onAction="#AjoutB" prefHeight="40.0" prefWidth="104.0" text="Ajouter">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="tfrecherche" layoutX="483.0" layoutY="126.0" prefHeight="41.0" prefWidth="189.0" promptText="recherche">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tfSS" layoutX="865.0" layoutY="130.0" prefHeight="31.0" prefWidth="172.0" promptText="Entrer le ID à supprimer" />
+            <Label layoutX="682.0" layoutY="57.0" text="Séance" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="table" layoutX="437.0" layoutY="176.0" prefHeight="485.0" prefWidth="661.0">
+              <columns>
+                <TableColumn fx:id="tvs" prefWidth="107.0" text="ID Seance" />
+                <TableColumn fx:id="tvC" prefWidth="113.0" text="Capacité" />
+                  <TableColumn fx:id="tvCo" prefWidth="139.0" text="ID Coach" />
+                  <TableColumn fx:id="tvT" prefWidth="145.0" text="Nom" />
+                  <TableColumn fx:id="tvDa" prefWidth="158.0" text="Date" />
+              </columns>
+            </TableView>
+            <Button fx:id="butA" layoutX="852.0" layoutY="674.0" mnemonicParsing="false" onMouseClicked="#AffichS" prefHeight="44.0" prefWidth="115.0" text="Actualiser">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="telecharger" layoutX="1009.0" layoutY="677.0" mnemonicParsing="false" onAction="#telecharger" prefHeight="39.0" prefWidth="109.0" text="Télécharger">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="mail" layoutX="386.0" layoutY="680.0" mnemonicParsing="false" onMouseClicked="#mailB" prefHeight="38.0" prefWidth="89.0" text="Send Mail">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="retourp" layoutX="291.0" layoutY="47.0" mnemonicParsing="false" onAction="#retourp" text="Retour" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

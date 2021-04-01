@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui3.ClientEController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="11.0" layoutY="10.0" prefHeight="746.0" prefWidth="1239.0" style="-fx-background-color: #08415d;">
+         <children>
+            <AnchorPane layoutX="-2.0" layoutY="-6.0" prefHeight="752.0" prefWidth="254.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Button layoutX="28.0" layoutY="339.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="Emploi du temps">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="tfrecherche" layoutX="483.0" layoutY="126.0" prefHeight="41.0" prefWidth="189.0" promptText="recherche">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="611.0" layoutY="45.0" prefHeight="27.0" prefWidth="196.0" text="Bienvenue" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Label>
+            <TableView fx:id="table" layoutX="307.0" layoutY="182.0" prefHeight="482.0" prefWidth="664.0">
+               <columns>
+                  <TableColumn fx:id="tvs" prefWidth="107.0" text="ID Seance" />
+                  <TableColumn fx:id="tvC" prefWidth="113.0" text="Capacité" />
+                  <TableColumn fx:id="tvCo" prefWidth="139.0" text="ID Coach" />
+                  <TableColumn fx:id="tvT" prefWidth="145.0" text="Nom" />
+                  <TableColumn fx:id="tvDa" prefWidth="158.0" text="Date" />
+               </columns>
+            </TableView>
+            <Button fx:id="butA" layoutX="871.0" layoutY="674.0" mnemonicParsing="false" onAction="#AffichS" prefHeight="44.0" prefWidth="86.0" text="Actualiser">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

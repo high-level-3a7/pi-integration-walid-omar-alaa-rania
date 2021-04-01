@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="gui1.IntreclamationController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="7.0" prefHeight="777.0" prefWidth="268.0" style="-fx-background-color: #f4fefe;">
+         <children>
+            <Circle fill="#f5f5f5" layoutX="124.0" layoutY="64.0" radius="36.0" stroke="BLACK" strokeType="INSIDE" />
+            <Line endX="-6.0" layoutX="192.0" layoutY="158.0" startX="-110.0" />
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="64.0" layoutY="224.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="140.0" style="-fx-background-color: #f4fefe; -fx-border-color: #03fccf;" text="User/Admin">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="43.0" layoutY="288.0" mnemonicParsing="false" onMouseClicked="#adminorclient" prefHeight="54.0" prefWidth="183.0" style="-fx-background-color: #f4fefe; -fx-border-color: #03fccf;" text="Réclamation/Activité">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="378.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="169.0" style="-fx-background-color: #f4fefe; -fx-border-color: #03fccf;" text="Boutique">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="462.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="226.0" style="-fx-background-color: #f4fefe; -fx-border-color: #03fccf;" text="Abonnement /zone d’accès ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="574.0" mnemonicParsing="false" onMouseClicked="#gogestmat" prefHeight="54.0" prefWidth="169.0" style="-fx-background-color: #f4fefe; -fx-border-color: #03fccf;" text="Gestion Materiel">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="655.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="169.0" style="-fx-background-color: #f4fefe; -fx-border-color: #03fccf;" text="Emploi du temps">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="278.0" layoutY="-4.0" prefHeight="792.0" prefWidth="1006.0" style="-fx-background-color: #08415d;">
+         <children>
+            <FontAwesomeIconView glyphName="CLOSE" layoutX="965.0" layoutY="33.0" onMouseClicked="#close" size="20" text="" wrappingWidth="40.7142858505249">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+            <Pane layoutX="9.0" layoutY="101.0" prefHeight="9.0" prefWidth="989.0" style="-fx-background-color: #000;" />
+            <Text fill="#a115ab" layoutX="349.0" layoutY="70.0" scaleY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reclamations" textAlignment="CENTER" wrappingWidth="307.6708984375">
+               <font>
+                  <Font name="Magneto Bold" size="23.0" />
+               </font>
+            </Text>
+            <Text fill="#a115ab" layoutX="345.0" layoutY="325.0" scaleY="1.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des Reclamations :" textAlignment="CENTER" wrappingWidth="315.6708984375">
+               <font>
+                  <Font name="Magneto Bold" size="23.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="#26ae61" glyphName="REFRESH" layoutX="110.0" layoutY="182.0" onMouseClicked="#refresh" size="45" />
+            <Button layoutX="197.0" layoutY="146.0" mnemonicParsing="false" onMouseClicked="#sort" prefHeight="39.0" prefWidth="106.0" style="-fx-background-color: #c4c92c;" text="trier">
+               <font>
+                  <Font name="Magneto Bold" size="20.0" />
+               </font>
+            </Button>
+            <TextField fx:id="searchFid" layoutX="563.0" layoutY="150.0" promptText="rechercher" />
+            <ComboBox fx:id="combetatrec" layoutX="51.0" layoutY="218.0" onAction="#select" prefWidth="150.0" />
+            <Label fx:id="label" layoutX="249.0" layoutY="218.0" prefHeight="31.0" prefWidth="226.0" text="nbr reclamation par etat :" textFill="#bcb2b2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="combtyperec" layoutX="496.0" layoutY="218.0" onAction="#select2" prefWidth="150.0" />
+            <Label fx:id="label1" layoutX="694.0" layoutY="218.0" prefHeight="31.0" prefWidth="226.0" text="nbr reclamation par type :" textFill="#bcb2b2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tabrec" layoutX="96.0" layoutY="359.0" prefHeight="422.0" prefWidth="836.0">
+               <columns>
+                  <TableColumn fx:id="userCol" prefWidth="121.0" text="user" />
+                  <TableColumn fx:id="etatCol" prefWidth="137.0" text="etat" />
+                  <TableColumn fx:id="typeCol" prefWidth="118.0" text="type" />
+                  <TableColumn fx:id="contenuCol" prefWidth="216.0" text="contenu" />
+                  <TableColumn fx:id="dateCol1" prefWidth="143.0" text="date" />
+                  <TableColumn fx:id="editCol" prefWidth="100.0" text="modifier" />
+               </columns>
+            </TableView>
+            <FontAwesomeIconView glyphName="ARROW_LEFT" layoutX="30.0" layoutY="36.0" onMouseClicked="#retour" scaleX="2.0" scaleY="2.5" wrappingWidth="26.285714149475098">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

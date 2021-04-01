@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="gui1.AddactiviteController">
+   <children>
+      <AnchorPane layoutX="2.0" layoutY="-10.0" prefHeight="777.0" prefWidth="268.0" style="-fx-background-color: #f4fefe;">
+         <children>
+            <Circle fill="#f5f5f5" layoutX="124.0" layoutY="64.0" radius="36.0" stroke="BLACK" strokeType="INSIDE" />
+            <Line endX="-6.0" layoutX="192.0" layoutY="158.0" startX="-110.0" />
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="64.0" layoutY="224.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="140.0" style="-fx-background-color: #f4fefe; -fx-border-color: #03fccf;" text="User/Admin">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="43.0" layoutY="288.0" mnemonicParsing="false" onMouseClicked="#adminorclient" prefHeight="54.0" prefWidth="183.0" style="-fx-background-color: #f4fefe; -fx-border-color: #03fccf;" text="Réclamation/Activité">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="378.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="169.0" style="-fx-background-color: #f4fefe; -fx-border-color: #03fccf;" text="Boutique">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="462.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="226.0" style="-fx-background-color: #f4fefe; -fx-border-color: #03fccf;" text="Abonnement /zone d’accès ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="574.0" mnemonicParsing="false" onMouseClicked="#gogestmat" prefHeight="54.0" prefWidth="169.0" style="-fx-background-color: #f4fefe; -fx-border-color: #03fccf;" text="Gestion Materiel">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="50.0" layoutY="655.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="169.0" style="-fx-background-color: #f4fefe; -fx-border-color: #03fccf;" text="Emploi du temps">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="270.0" layoutY="-9.0" prefHeight="777.0" prefWidth="1006.0" style="-fx-background-color: #08415d;">
+         <children>
+            <FontAwesomeIconView glyphName="CLOSE" layoutX="965.0" layoutY="33.0" onMouseClicked="#close" size="20" text="" wrappingWidth="40.7142858505249">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+            <Pane layoutX="17.0" layoutY="92.0" prefHeight="9.0" prefWidth="989.0" style="-fx-background-color: #000;" />
+            <Text fill="#c90d49" layoutX="357.0" layoutY="61.0" scaleY="1.5" strokeType="OUTSIDE" strokeWidth="0.0" text="ajouter une activité" textAlignment="CENTER" wrappingWidth="307.6708984375">
+               <font>
+                  <Font name="Magneto Bold" size="23.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="combtypeact" layoutX="278.0" layoutY="207.0" prefHeight="31.0" prefWidth="279.0" />
+            <Label layoutX="79.0" layoutY="201.0" text="type" textFill="#bcb2b2">
+               <font>
+                  <Font name="Century Gothic" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="86.0" layoutY="321.0" prefHeight="43.0" prefWidth="91.0" text="nom" textFill="#bcb2b2">
+               <font>
+                  <Font name="Century Gothic" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="439.0" text="durée " textFill="#bcb2b2">
+               <font>
+                  <Font name="Century Gothic" size="34.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nomFid" layoutX="275.0" layoutY="328.0" prefHeight="31.0" prefWidth="286.0">
+               <font>
+                  <Font name="Century Gothic" size="23.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="dureeFid" layoutX="275.0" layoutY="439.0" prefHeight="31.0" prefWidth="286.0">
+               <font>
+                  <Font name="Century Gothic" size="23.0" />
+               </font>
+            </TextField>
+            <HBox alignment="CENTER" layoutX="193.0" layoutY="572.0" prefHeight="100.0" prefWidth="436.0">
+               <children>
+                  <Button mnemonicParsing="false" onMouseClicked="#saveact" prefHeight="45.0" prefWidth="140.0" style="-fx-background-color: #32ab52;" text="ajouter">
+                     <HBox.margin>
+                        <Insets right="130.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="MV Boli" size="26.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button mnemonicParsing="false" onMouseClicked="#clear" prefHeight="45.0" prefWidth="140.0" style="-fx-background-color: #5e7582;" text="effacer">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="MV Boli" size="26.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <FontAwesomeIconView glyphName="ARROW_LEFT" layoutX="24.0" layoutY="29.0" onMouseClicked="#retour" scaleX="2.0" scaleY="2.5" wrappingWidth="26.285714149475098">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

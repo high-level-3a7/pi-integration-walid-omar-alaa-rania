@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GestionCategorieController">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="754.0" prefWidth="1116.0">
+         <children>
+            <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="789.0" prefWidth="1210.0" style="-fx-background-color: #ffffff;" VBox.vgrow="ALWAYS">
+               <children>
+                  <AnchorPane layoutX="230.0" prefHeight="754.0" prefWidth="0.0" style="-fx-background-color: #f4fefe;" />
+                  <AnchorPane layoutX="226.0" prefHeight="789.0" prefWidth="975.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <AnchorPane layoutX="38.0" layoutY="-5.0" prefHeight="799.0" prefWidth="923.0" style="-fx-background-color: #08415d #08415d;">
+                           <children>
+                              <TableView fx:id="table_categorie" layoutX="14.0" layoutY="215.0" prefHeight="513.0" prefWidth="890.0">
+                                 <columns>
+                                    <TableColumn fx:id="id_nom" prefWidth="251.0" text="nom" />
+                                    <TableColumn fx:id="id_description" prefWidth="258.0" text="description" />
+                                    <TableColumn fx:id="id_type_sport" minWidth="0.0" prefWidth="250.0" text="type_sport" />
+                                    <TableColumn fx:id="modif_sup" minWidth="0.0" prefWidth="128.0" text="modif/sup" />
+                                 </columns>
+                              </TableView>
+                              <Text layoutX="22.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion Categorie" wrappingWidth="247.00000935792923">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="addCate" layoutX="779.0" layoutY="162.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="37.0" prefWidth="41.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="PLUS" size="18" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="840.0" layoutY="162.0" mnemonicParsing="false" onAction="#refresh_Categorie" prefHeight="37.0" prefWidth="41.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="REFRESH" size="18" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="btnretour" layoutX="43.0" layoutY="29.0" mnemonicParsing="false" onAction="#retour">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="ARROW_LEFT" />
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Pane layoutX="4.0" layoutY="219.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="User/Admin">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutY="77.0" mnemonicParsing="false" onMouseClicked="#gotoRec" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="Réclamation/Activité">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutY="154.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="Boutique">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutY="231.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="Abonnement /zone d’accès ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutY="308.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="Gestion Materiel">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutY="385.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="230.0" style="-fx-border-color: #53b7d2;" text="Emploi du temps">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
